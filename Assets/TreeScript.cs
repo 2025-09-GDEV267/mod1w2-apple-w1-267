@@ -2,15 +2,9 @@ using UnityEngine;
 
 public class TreeScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    const int RANGE = 5;
+    public void moveTree()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        transform.position = new Vector3(Random.Range(-RANGE, RANGE), transform.position.y, transform.position.z);
     }
 }
