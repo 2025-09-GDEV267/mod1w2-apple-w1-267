@@ -12,6 +12,11 @@ public class HighScore : MonoBehaviour
     void Awake()
     {
         _UI_TEXT = GetComponent<Text>();
+
+        if (PlayerPrefs.HasKey("HighScore"))
+        {
+            SCORE = PlayerPrefs.GetInt("HighScore");
+        }
     }
     static public int SCORE
     {
@@ -19,6 +24,7 @@ public class HighScore : MonoBehaviour
         private set {
 
             _SCORE = value;
+            PlayerPrefs.SetInt("HighScore", value);
             if (_UI_TEXT != null)
             {
                 _UI_TEXT.text = "High Score: " + value.ToString("#,0");
@@ -31,6 +37,19 @@ public class HighScore : MonoBehaviour
         if (scoreToTry <= _SCORE) return;
         //else
         SCORE = scoreToTry;
+    }
+
+    [Tooltip("Check this box to reset the HighScore in PlayerPrefs")]
+    public bool resetHighScoreNow = false;
+
+    void OnDrawGizmos()
+    {
+        if (resetHighScoreNow)
+        {
+            resetHighScoreNow = false;
+            PlayerPrefs.SetInt("HighScore", 1000);
+            Debug.LogWarning("PlayerPrefs HighScore reset to 1,000.");
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
