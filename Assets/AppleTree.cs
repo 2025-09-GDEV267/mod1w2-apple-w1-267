@@ -15,7 +15,7 @@ public class AppleTree : MonoBehaviour
     void Start()
     {
         // Start dropping apples                                          
-        Invoke("DropApple", 2f);
+        Invoke(nameof(DropApple), 2f);
     }
 
     void DropApple()

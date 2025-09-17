@@ -18,6 +18,8 @@ public class Apple : MonoBehaviour
         // fell offscreen
         if (transform.position.y < bottomY)
         {
+            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+            apScript.AppleMissed();
             Destroy(this.gameObject);
         }
     }
