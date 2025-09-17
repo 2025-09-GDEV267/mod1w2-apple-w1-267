@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 846018236972504878}
   - component: {fileID: 577373552272266103}
   - component: {fileID: 3132049757516935695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leaf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3451247043446632109}
   - component: {fileID: 3334649386319034569}
   - component: {fileID: 9165651069152842712}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fruit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 5555286279774186810}
   - component: {fileID: 7354122915669696932}
   - component: {fileID: 8656213024587422369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stem (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,9 +335,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1487673886421517538}
-  m_Layer: 0
+  - component: {fileID: -5999732016442781484}
+  - component: {fileID: -6032496364497019656}
+  m_Layer: 6
   m_Name: Apple
-  m_TagString: Untagged
+  m_TagString: Apple
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,6 +363,45 @@ Transform:
   - {fileID: 7825444873776033286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-5999732016442781484
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104949423950201265}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &-6032496364497019656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104949423950201265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1ef281ecf0b1041b7fb5867e7cd6eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7365206964582143945
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +414,7 @@ GameObject:
   - component: {fileID: 4468261659694691544}
   - component: {fileID: 5046057366525116054}
   - component: {fileID: 2482973384682296321}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
