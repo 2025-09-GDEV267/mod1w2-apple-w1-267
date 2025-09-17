@@ -17,7 +17,7 @@ public class Basket : MonoBehaviour
     void Update()
     {
         Vector3 mousePos2D = Input.mousePosition;
-        // Z will be opposite from 0-point of camera's Z position
+        // Z will be reset to 0 by taking the negative of the camera position
         mousePos2D.z = -Camera.main.transform.position.z;
         // Convert 2D screen space to 3D game world space
         Vector3 mousePos3D = Camera.main.ScreenToWorldPoint(mousePos2D);
