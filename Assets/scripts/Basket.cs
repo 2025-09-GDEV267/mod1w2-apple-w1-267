@@ -27,7 +27,7 @@ public class Basket : MonoBehaviour
         GameObject collidedWith = coll.gameObject;    // 3
 
 
-        if (collidedWith.tag == "Apple")
+        if (collidedWith.CompareTag("Apple"))
         {                                // 4
             Destroy(collidedWith);
         }
