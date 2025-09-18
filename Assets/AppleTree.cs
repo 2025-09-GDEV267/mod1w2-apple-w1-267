@@ -52,7 +52,7 @@ public class AppleTree : MonoBehaviour
             Invoke(nameof(ReStart), timeBetweenWaves);
             return;
         }        
-        Invoke("DropApple", appleDropDelay);
+        Invoke(nameof(DropApple), appleDropDelay);
     }
 
     // Update is called once per frame
