@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1113105033383270245}
   - component: {fileID: 285982752779703043}
   - component: {fileID: 8998815803095215821}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8850215087280004492}
   - component: {fileID: 7156891496344554705}
   - component: {fileID: 5703501073211310228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 594292594742329027}
   - component: {fileID: 8085836038764255212}
   - component: {fileID: 1520473119870351830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AppleTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2527d96b5666a419049af9d8364f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 1
+  applePrefab: {fileID: 516940191043041271, guid: 65b6760f93ae21d4d95624dba3b52b35, type: 3}
+  speed: 12
   leftAndRightEdge: 24
-  changeDirChance: 0.1
+  changeDirChance: 0.02
   appleDropDelay: 1
