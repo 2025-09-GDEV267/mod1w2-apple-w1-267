@@ -1,14 +1,13 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
 public class ApplePicker : MonoBehaviour
 {
 
-    public GameObject        basketPrefab;
-    public int               numBaskets = 3;
-    public float             basketBottomY = -14f;
-    public float             basketSpacingY = 2f;
+    public GameObject basketPrefab;
+    public int          numBaskets = 3;
+    public float        basketBottomY = -14f;
+    public float        basketSpacingY = 2f;
 
     void Start()
     {

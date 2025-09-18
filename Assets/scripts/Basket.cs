@@ -21,13 +21,19 @@ public class Basket : MonoBehaviour
         this.transform.position = pos;
     }
 
+
     void OnCollisionEnter(Collision coll)
     {                               // 2
         // Find out what hit this basket
+<<<<<<< Updated upstream
         GameObject collidedWith = coll.gameObject;    // 3
 
 
         if (collidedWith.CompareTag("Apple"))
+=======
+        GameObject collidedWith = coll.gameObject;                          // 3
+        if (collidedWith.tag == "Apple")
+>>>>>>> Stashed changes
         {                                // 4
             Destroy(collidedWith);
         }
