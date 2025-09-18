@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1520473119870351830, guid: 7a780004a57e4d246bd25d7f9e44e1fb, type: 3}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8811858373358728367, guid: 7a780004a57e4d246bd25d7f9e44e1fb, type: 3}
       propertyPath: m_Name
       value: AppleTree
