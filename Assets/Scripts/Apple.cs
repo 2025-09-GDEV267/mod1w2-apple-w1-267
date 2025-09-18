@@ -13,5 +13,4 @@ public class Apple : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
 }
