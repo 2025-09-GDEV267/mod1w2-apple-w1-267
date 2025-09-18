@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765afcf3dc01be34eb46e07aa6df5a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basketPrefab: {fileID: 0}
+  basketPrefab: {fileID: 351574347014125244}
   numBaskets: 3
   basketBottomY: -14
   basketSpacingY: 2
@@ -406,6 +406,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1320150435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320150432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f522ce2c79bfbe748aae1562d6322b57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &351574347014125243
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -428,7 +440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201126939517765136, guid: 58cc708eab7c86d418da6e3ae9018911, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 41.56429
       objectReference: {fileID: 0}
     - target: {fileID: 9201126939517765136, guid: 58cc708eab7c86d418da6e3ae9018911, type: 3}
       propertyPath: m_LocalPosition.x
@@ -633,6 +645,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7313909902302913214, guid: 952cf714246da674f9695398cb4f581d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1320150434}
+    - targetCorrespondingSourceObject: {fileID: 7313909902302913214, guid: 952cf714246da674f9695398cb4f581d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1320150435}
   m_SourcePrefab: {fileID: 100100000, guid: 952cf714246da674f9695398cb4f581d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
